@@ -19,23 +19,30 @@ $(document).ready(function() {
 	});
 
 	// Main carousel
-	$('.owl-carousel.banner').owlCarousel({
-		items: 1,
-		loop: true,
-		autoplay: true,
-		autoplayTimeout: 6000,
-		autoplaySpeed: 1000,
-		nav: true,
-		navText: ['','']
-	})
+	$(function() {
+		var $slides = $('#slides');
 
-	// Resize bg_image
-	function heightDetect() {
-		$(".block_main").css("height", $(window).height());
-	};
-	heightDetect();
-	$(window).resize(function() {
-		heightDetect();
+		Hammer($slides[0]).on("swipeleft", function(e) {
+			$slides.data('superslides').animate('next');
+		});
+
+		Hammer($slides[0]).on("swiperight", function(e) {
+			$slides.data('superslides').animate('prev');
+		});
+
+		$slides.superslides({
+			hashchange: true
+		});
 	});
+
+	$('#slides').superslides({
+		hashchange: true,
+		play: 3500,
+		animation_speed: 800,
+		animation: "fade",
+		pagination: false,
+
+	});
+
 
 }); 

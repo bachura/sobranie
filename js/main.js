@@ -1,48 +1,23 @@
 $(document).ready(function() {
 
-	//Fixed header 
-	var $menu = $("#menu"); 
-	$(window).scroll(function(){
-		if ( $(this).scrollTop() > 10 && $menu.hasClass("default") ){
-			$menu.fadeOut('fast',function(){
-				$(this).removeClass("default")
-				.addClass("fixed main-head")
-				.fadeIn('slow');
-			});
-		} else if($(this).scrollTop() <= 0 && $menu.hasClass("fixed")) {
-			$menu.fadeOut('fast',function(){
-				$(this).removeClass("fixed main-head")
-				.addClass("default main-head")
-				.fadeIn('fast');
-			});
+	// Header phone slider
+	(function phs() {
+		var op = $('#phone_slider > div.v');
+		op.removeClass('v').fadeOut(300);
+		if (op.next().length) {
+			op.next().addClass('v').fadeIn(300);
+		} else {
+			op.parent().children().first().addClass('v').fadeIn(300);
 		}
-	});
+		setTimeout(phs, 1600);
+	}());
 
 	// Main carousel
-	$(function() {
-		var $slides = $('#slides');
-
-		Hammer($slides[0]).on("swipeleft", function(e) {
-			$slides.data('superslides').animate('next');
-		});
-
-		Hammer($slides[0]).on("swiperight", function(e) {
-			$slides.data('superslides').animate('prev');
-		});
-
-		$slides.superslides({
-			hashchange: true
-		});
+	$('.owl-carousel').owlCarousel ({
+		items: 1,
+    loop: true,
+    margin: 10,
+    nav: false
 	});
 
-	$('#slides').superslides({
-		hashchange: true,
-		play: 3500,
-		animation_speed: 800,
-		animation: "fade",
-		pagination: false,
-
-	});
-
-
-}); 
+});

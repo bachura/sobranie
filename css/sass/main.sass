@@ -1,8 +1,6 @@
 @import "bourbon/bourbon"
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&subset=cyrillic-ext')
-
 /* 	GENERAL STYLE */
-$color: #000
+$main-color: #f65b09
 
 //Убрать стрелки у формы телефона
 input::-webkit-outer-spin-button,
@@ -23,9 +21,10 @@ html,
 body
 	margin: 0
 	padding: 0
-	overflow-x: hidden
+	height: 100%
+	// overflow-x: hidden
 body
-	font-family: "Arimo", sans-serif
+	font-family: "Drugs", sans-serif
 	font-weight: normal
 	font-size: 16px
 
@@ -62,36 +61,147 @@ section
 		color: #fff
 /* 	END GENERAL STYLE */
 
-.main_head
-	background: #fff
-	padding: 20px 0
-.logo_wrap
-	text-align: center
-	padding: 20px 0
-.logo
-	display: block
-.header_phone
-	text-align: center
-	p
-		margin: 0
-		padding: 0
-		line-height: 69px
-
-// Fixed header
-.main-head
-	background: lightblue
-	position: absolute
-.default
-	width: 100%
-	background: rgba(255,255,255,.4)
-	z-index: 100
-.fixed
-	width: 100%
+/* MAIN BLOCK */
+/* Header top */
+header
+	height: 50px
+	padding: 15px
+	color: #fff
+	background-color: #000
 	position: fixed
-	z-index: 1000
-	background: lightblue
-	opacity: 0.9
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 101
+.header-top
+	&-social
+		text-align: left
+		a
+			padding: 0 5px
+		i
+			font-size: 20px
+			color: #fff
+			transition: .3s
+			-webkit-transition: .3s
+			&:hover
+				color: $main-color
+.logo-wrap
+	text-align: center
+	line-height: 18px
+	img
+		width: 60%
+/* End header top */
 
-.block_main
-	padding: 0
-	min-height: 100%
+/* Phone header */
+.phones
+	text-align: right
+	color: #fff
+	> div
+		display: block
+		// height: 28px
+		&.operators
+			position: relative
+			width: 40px
+			// line-height: 28px
+			> div
+				left: 5px
+				top: -20px
+				position: absolute
+				width: 20px
+				text-align: center
+				white-space: nowrap
+				display: none
+				// line-height: 26px
+				&:last-child
+					display: block
+				span
+					display: inline-block
+					// line-height: 20px
+					vertical-align: middle
+					color: $main-color
+	.country-code, .number, .operators
+		display: inline-block
+/* End phone header */
+
+/* Main carousel */
+.slider
+	padding: 50px 0
+	height: 100%
+
+// .banner
+// 	height: 100%
+// 	background-size: cover
+// 	background-position: center
+// 	background-repeat: no-repeat
+// 	background-image: url(../img/Main_slider2.jpg)
+// 	h2
+// 		position: absolute
+// 		top: 40%
+// 		left: 0
+// 		width: 100%
+// 		font-family: Arial, sans-serif
+// 		font-size: 30px
+// 		font-weight: 800
+// 		text-align: center
+// 		color: #000
+/* End main carousel */
+
+/* Header bottom */
+#aside
+	// padding: 15px
+	line-height: 50px
+	position: absolute
+	bottom: 0
+	width: 100%
+	color: #fff
+	background-color: #000
+	height: 50px !important
+
+.header-bottom
+	nav
+		ul
+			margin: 0
+			padding: 0
+			text-align: center
+			li
+				padding: 0 30px
+				display: inline-block
+				border-right: 1px solid $main-color
+				&:last-child
+					border-right: none
+				a
+					padding: 10px 15px
+					color: #fff
+					text-decoration: none
+					transition: .3s
+					-webkit-transition: .3s
+					&:hover
+						color: $main-color
+						text-shadow: 0px 5px 8px $main-color
+/* End headre bottom */
+
+/* Setting sticky */
+.sticky
+	position: fixed
+	z-index: 101
+	height: 50px !important
+.stop
+	position: relative
+	z-index: 101
+/* End setting sticky */
+/* END MAIN BLOCK */
+
+/* WRAP BLOCK */
+#article
+	padding: 200px
+	display: block
+	color: #000
+/* END WRAP BLOCK */
+
+/* FOOTER */
+footer
+	height: 50px
+	color: #fff
+	background-color: #000
+	padding: 15px
+/* END FOOTER */

@@ -5,58 +5,175 @@
 	<title>SOBRANIE</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.min.css" />
-	<link rel="stylesheet" href="libs/FontAwesome/font-awesome.min.css">
-	<link rel="stylesheet" href="libs/slick/slick.css">
-	<link rel="stylesheet" href="libs/slick/slick-theme.css">
-	<link rel="stylesheet" href="libs/fullscreen-slider/superslides.css">
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
-	<header class="main-head clear default" id="menu">
+	<!-- MAIN BLOCK
+	<header class="header-top">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4">
-					<div class="socilas"></div>
-				</div>
-				<div class="col-md-4">
-					<div class="logo_wrap">
-						<a href="index.html" class="logo"><img src="img/logo.png" alt="logo"></a>
+					<div class="header-top-social">
+						<a href="https://www.facebook.com/"><i class="fa fa-instagram"></i></a>
+						<a href="https://www.instagram.com/"><i class="fa fa-facebook-square"></i></a>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="header_phone">
-						<p>8 (093) 660 00 66</p>
+					<div class="logo-wrap">
+						<a href="index.html"><img src="img/logo.png" alt="logo"></a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="phones clearfix">
+						<div class="country-code">+38</div>
+						<div class="operators" id="phone_slider">
+							<div><span>097</span></div>
+							<div><span>095</span></div>
+							<div class="v"><span>093</span></div>
+						</div>
+						<div class="number"> 660 00 66</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	Main carousel
+	<div class="slider">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="banner">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	Main carousel
+	
+	<div class="header-bottom" id="aside">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<nav>
+						<ul>
+							<li>
+								<a href="#">Команда</a>
+							</li>
+							<li>
+								<a href="#">Проекты</a>
+							</li>
+							<li>
+								<a href="#">Блог</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	END MAIN BLOCK -->
+
+	<!-- MAIN BLOCK -->
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="header-top-social">
+						<a href="https://www.facebook.com/"><i class="fa fa-instagram"></i></a>
+						<a href="https://www.instagram.com/"><i class="fa fa-facebook-square"></i></a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="logo-wrap">
+						<a href="index.html"><img src="img/logo.png" alt="logo"></a>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="phones clearfix">
+						<div class="country-code">+38</div>
+						<div class="operators" id="phone_slider">
+							<div><span>097</span></div>
+							<div><span>095</span></div>
+							<div class="v"><span>093</span></div>
+						</div>
+						<div class="number"> 660 00 66</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
 
-	<!-- Main carousel -->
-		<section class="block_main">
-			<div id="slides">
-				<div class="slides-container">
-					<img src="img/Main_slider2.jpg" height="600" width="1300" alt="">
-					<img src="img/Main_slider3.jpg" height="600" width="1300" alt="">
-					<img src="img/Main_slider4.jpg" height="600" width="1300" alt="">
+
+	<div class="slider">
+		<!-- <div class="banner"> -->
+			<!-- <h2>Scroll to See the Sticky Navigation</h2> -->
+		<!-- </div> -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="owl-carousel owl-theme">
+						<div class="item">
+							<img src="img/main4k1.jpg" alt="">
+						</div>
+						<div class="item">
+							<img src="img/main4k2.jpg" alt="">
+						</div>
+						<div class="item">
+							<img src="img/main4k3.jpg" alt="">
+						</div>
+					</div>
 				</div>
-
-				<nav class="slides-navigation">
-					<a href="#" class="next">Next</a>
-					<a href="#" class="prev">Previous</a>
-				</nav>
 			</div>
-		</section>
-		<!-- Main carousel -->
+		</div>
+		
+	</div>
+		
+	<div id="aside" class="header-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<nav>
+						<ul>
+							<li>
+								<a href="#">Команда</a>
+							</li>
+							<li>
+								<a href="#">Проекты</a>
+							</li>
+							<li>
+								<a href="#">Блог</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END MAIN BLOCK -->
 
-		<section>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ipsa sed esse error delectus culpa consequatur, explicabo tenetur id in consectetur, doloribus earum excepturi laborum omnis rem labore ipsum pariatur impedit cum minus, quidem nostrum exercitationem accusamus aspernatur. Aliquid amet repellat quia, molestiae molestias nihil ipsa rem, cumque deserunt magni est ipsum facilis. Repellat non fuga delectus doloribus deserunt nemo ex molestiae consequatur ipsam nam eaque aperiam ullam culpa corrupti, a reiciendis ipsum distinctio beatae mollitia atque rem recusandae expedita eum? Unde sequi quae blanditiis iure numquam, hic, exercitationem repudiandae iusto eum, beatae aut dignissimos esse delectus. Tempora adipisci soluta a nemo magni harum debitis, sapiente veniam laudantium inventore, consectetur officia tenetur vero optio impedit ipsa aspernatur eos quis maiores sit laboriosam, cupiditate voluptates fugiat eum, quibusdam. Suscipit, beatae? Excepturi dolorum dolores suscipit tempora officiis placeat at officia possimus assumenda modi numquam similique ipsa dolor earum, nobis, sit provident hic, consequatur reprehenderit iusto repudiandae quia nostrum saepe quaerat id! Laborum adipisci voluptatem ratione libero ea? Culpa asperiores iste magni placeat libero esse officiis, nisi nemo, rerum rem incidunt recusandae eos perspiciatis earum blanditiis unde, vitae eius, dolor eligendi molestiae dicta ratione necessitatibus nulla. Ex aliquam, delectus accusamus mollitia illum ipsa voluptatum eveniet libero, facere nemo culpa sit error repellat dolorum, quibusdam repudiandae quos velit. Explicabo voluptatibus qui expedita sed omnis repellendus, quae libero earum laboriosam rerum magnam illo, tempore officia vitae! Id consequatur est dignissimos quo distinctio accusamus ut, aliquid fugit quasi exercitationem debitis officia saepe reprehenderit iste impedit repellat voluptas praesentium, doloremque officiis voluptates aut laborum, modi tenetur optio molestiae. Animi, voluptatum alias autem vel accusamus illum id provident facere quaerat magnam pariatur numquam ipsa nulla deserunt esse, facilis. Hic eaque tempore libero suscipit, deserunt iste numquam officiis magnam ratione minima, impedit veniam facere enim atque dicta, illum nisi velit ad! Repellendus nemo deserunt sint itaque, voluptates consequatur. Nostrum, quod, eius. Reprehenderit iure dolorem eligendi cupiditate illo porro fuga facilis harum quos doloremque id vitae vero ut nesciunt voluptates necessitatibus quam voluptatibus temporibus, asperiores expedita enim ad. Ipsam, mollitia modi natus quae non, saepe soluta labore temporibus eum aperiam accusantium inventore magni aliquid totam velit quos reiciendis in molestias. Necessitatibus sed, beatae ab nostrum corporis vitae voluptatem, quis porro repudiandae eum sunt maiores laboriosam eaque, rerum nemo at dolorum aspernatur et dignissimos, iure voluptates fugiat architecto vero maxime! Rem deleniti ducimus, tempora quidem porro rerum. Expedita doloremque quam minus nisi necessitatibus asperiores possimus quas eum rem, quod eaque soluta. Minima repellat, eligendi laboriosam nemo! Suscipit illum dolores fugit ut voluptas vel accusantium soluta saepe labore cum enim rem blanditiis eos sequi culpa ullam earum, molestiae beatae quod velit unde. Optio aliquid omnis atque dolores autem nihil et necessitatibus cum dignissimos veritatis cumque nobis, vero voluptate voluptatem explicabo eveniet similique perspiciatis quam perferendis alias consequatur? Molestias magni sed, dolorum veniam officia perferendis id quam, itaque aperiam! Temporibus perferendis rem ullam ipsum sed aspernatur eveniet, ad recusandae eos blanditiis, necessitatibus libero voluptas excepturi at dicta perspiciatis nesciunt quis nihil quos quasi odio obcaecati. Atque voluptatum nemo laborum quo magnam eum vitae dolores repellendus harum culpa delectus eaque odit consequuntur, rerum, fugit tenetur mollitia modi quisquam placeat nobis. Accusamus nulla, mollitia laborum repellat impedit molestiae illo explicabo, reiciendis ex obcaecati deserunt ipsa asperiores. Saepe sapiente, possimus dolore. Magnam sunt dolore nobis voluptatibus, modi maiores. Maxime ratione totam mollitia excepturi, libero enim ea, voluptatibus exercitationem quo voluptas repellendus esse earum harum facere beatae ipsam cupiditate fuga qui saepe, similique iusto natus maiores dignissimos. Dignissimos quis officia autem accusantium consequuntur! Reprehenderit quae aperiam aspernatur nemo, inventore corporis enim excepturi eaque voluptatum ipsam dicta. Impedit voluptate, quia, natus molestiae assumenda ipsum minima dignissimos modi recusandae sed perspiciatis praesentium distinctio ratione blanditiis eius laudantium corporis consectetur soluta optio autem dolorum rerum quaerat perferendis. Harum repellendus unde laudantium dolore sunt fuga iusto eveniet quasi vero maxime expedita qui animi voluptatem eligendi vitae quia quam doloribus, doloremque est facere! Quos explicabo alias maiores voluptas assumenda maxime incidunt excepturi deserunt quia at nemo enim cum doloremque hic, veniam voluptatum accusamus iure cupiditate expedita labore fugit repudiandae nobis. Fuga enim nemo, voluptatum voluptatem consequuntur expedita rerum porro eveniet deleniti rem atque nihil ut accusantium excepturi sapiente debitis, vitae veniam omnis molestiae quasi dolor. Possimus repellat, fugiat? Quidem doloribus fugiat commodi officia possimus iste iure minus, eius ipsum dolorum recusandae, corporis quia accusantium porro mollitia reprehenderit unde, ullam amet eligendi aperiam aspernatur. Ipsum quia numquam molestias, commodi. Dolores corporis, ullam eveniet possimus ab est voluptatum voluptas impedit atque! Optio dicta, provident! Fuga beatae laboriosam dolores, nihil harum veritatis officiis, placeat, in, mollitia repellat accusantium illum! Doloremque quibusdam, doloribus cupiditate maxime, libero neque perspiciatis hic recusandae fugiat, officiis veniam suscipit ad corporis rerum veritatis et quaerat similique. Eveniet iusto aspernatur voluptates quibusdam neque maxime sed excepturi aut, ea ab voluptatibus veritatis eius possimus alias. Totam magni voluptates inventore dicta eius quaerat corporis fuga repudiandae, libero esse. Beatae exercitationem facere aliquid accusantium quos reiciendis, eligendi blanditiis illum eos, illo sequi quasi laborum repudiandae ipsam dolorum. Necessitatibus harum dolorum sint debitis esse dolore blanditiis rerum fuga voluptatum odit aliquid officia totam eius velit beatae deleniti, atque, quaerat, voluptas! Soluta facere, illum autem culpa modi, accusantium dolorem accusamus! Quos debitis ipsam iste nihil, necessitatibus autem laudantium cupiditate accusamus ut, alias odit minima excepturi, rem dolorum nobis quidem, commodi provident ex explicabo enim reiciendis velit eaque quo exercitationem. Quas eius dolorem enim qui, aut fuga laudantium voluptate distinctio, sunt delectus cumque culpa magnam. Veritatis reiciendis nihil, nam pariatur quaerat saepe dignissimos amet hic, nulla nostrum laborum veniam dicta repudiandae nesciunt modi, sunt natus voluptate totam nemo debitis. Eos ipsam at distinctio maiores voluptate suscipit, iusto tempora illum minima veritatis facere fuga aspernatur temporibus, reiciendis reprehenderit optio quaerat repudiandae a, sequi velit ex. Placeat illum, cumque provident unde. Sint totam tempore cum recusandae nulla rem eligendi quis, praesentium nobis ad et dolor omnis, dolorem dolores, eos fuga. Ducimus error, dignissimos voluptas perferendis debitis autem, ipsum maxime placeat voluptate dolore sit veritatis sapiente animi adipisci rem tempore ad.
-		</section>
 
-		<footer>
-		</footer>
+	<div id="article">
+		<h1>The Article About Dogs</h1>
+		<p>Some dogs smoke cigaretes dolor sit amet, consectetur adipiscing elit. Suspendisse ac cursus massa, ac cursus ante. Nunc in turpis et leo tempor hendrerit sed nec massa. Nulla facilisi. Pellentesque et neque sit amet erat consectetur sagittis. Pellentesque sed volutpat mi, ac dignissim lacus. Nam ultrices vel nisi sed semper.</p>
+	</div>
+
+	<!-- FOOTER -->
+	<footer>
+		Footer copyright &copy; 2018
+	</footer>
+	<!-- END FOOTER -->
+
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
@@ -66,9 +183,10 @@
 	<![endif]-->
 	
 	<script src="libs/jquery/jquery.min.js"></script>
-	<script src="libs/slick/slick.min.js"></script>
-	<script src="libs/fullscreen-slider/jquery.superslides.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/sticky_double_nav.js"></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>

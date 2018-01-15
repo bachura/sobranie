@@ -61,6 +61,19 @@ section
 		color: #fff
 /* 	END GENERAL STYLE */
 
+/* PRELOADER */
+#preloader
+	position: fixed
+	left: 0
+	top: 0
+	z-index: 999
+	width: 100%
+	height: 100%
+	overflow: visible
+	background: #333 url("../img/preloader.gif") no-repeat center center
+/* END PRELOADER */
+
+
 /* MAIN BLOCK */
 /* Header top */
 header
@@ -127,23 +140,30 @@ header
 .slider
 	padding: 50px 0
 	height: 100%
+.slider *
+	height: 100%
+	margin: 0 auto
 
-// .banner
-// 	height: 100%
-// 	background-size: cover
-// 	background-position: center
-// 	background-repeat: no-repeat
-// 	background-image: url(../img/Main_slider2.jpg)
-// 	h2
-// 		position: absolute
-// 		top: 40%
-// 		left: 0
-// 		width: 100%
-// 		font-family: Arial, sans-serif
-// 		font-size: 30px
-// 		font-weight: 800
-// 		text-align: center
-// 		color: #000
+.slick-next:before, .slick-prev:before
+	color: #000
+	position: absolute
+.slick-next
+	right: 50px
+	z-index: 2
+.slick-prev 
+	left: 50px
+	z-index: 2
+.item
+	h2
+		position: absolute
+		top: 40%
+		left: 0
+		width: 100%
+		font-family: Arial, sans-serif
+		font-size: 30px
+		font-weight: 800
+		text-align: center
+		color: red
 /* End main carousel */
 
 /* Header bottom */

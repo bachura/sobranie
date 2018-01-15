@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+	// Preloader
+	$(window).load(function () {
+		setTimeout(function(){
+			$('#preloader').fadeOut('slow', function () {
+			});
+		},10000);
+	});
+
 	// Header phone slider
 	(function phs() {
 		var op = $('#phone_slider > div.v');
@@ -10,14 +18,19 @@ $(document).ready(function() {
 			op.parent().children().first().addClass('v').fadeIn(300);
 		}
 		setTimeout(phs, 1600);
-	}());
+	}());	
 
 	// Main carousel
-	$('.owl-carousel').owlCarousel ({
-		items: 1,
-    loop: true,
-    margin: 10,
-    nav: false
+	$('.main-carousel').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		pauseOnHover: false,
+		autoplay: true,
+		autoplaySpeed: 1800,
+		speed: 1200,
+		fade: true,
+		cssEase: 'linear'
 	});
 
 });

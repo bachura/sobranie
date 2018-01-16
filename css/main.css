@@ -80,7 +80,8 @@ section {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #fff url("../img/preloader1.gif") no-repeat center center; }
+  background: #fcfcfc url("../img/preloader.gif") no-repeat center center;
+  background-size: 100%; }
 
 /* END PRELOADER */
 /* MAIN BLOCK */

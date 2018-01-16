@@ -5,8 +5,17 @@ $(document).ready(function() {
 		setTimeout(function(){
 			$('#preloader').fadeOut('slow', function () {
 			});
-		},10000);
+		},1000);
 	});
+
+	// var prel = "#preloader";
+	// if (prel = true) 
+	// {
+	// 	$('html, body').css("overflow", "hidden");	
+	// } else
+	// {
+	// 	$('html, body').css("overflow", "hidden");
+	// }
 
 	// Header phone slider
 	(function phs() {

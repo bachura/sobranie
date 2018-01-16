@@ -39,6 +39,20 @@ section
 	height: auto
 	padding: 60px 0
 
+.line
+	position: relative
+	z-index: 1
+.line::before
+	content: ''
+	position: absolute
+	background-color: $main-color
+	bottom: 0
+	left: 1px
+	right: 0
+	height: 15px
+	z-index: -1
+
+
 .btn
 	background: transparent
 	color: #fff
@@ -70,7 +84,8 @@ section
 	width: 100%
 	height: 100%
 	overflow: visible
-	background: #333 url("../img/preloader.gif") no-repeat center center
+	background: #fff url("../img/preloader1.gif") no-repeat center center
+	// background-size: 100%
 /* END PRELOADER */
 
 
@@ -145,6 +160,7 @@ header
 	margin: 0 auto
 
 .slick-next:before, .slick-prev:before
+	padding: 10px 20px
 	color: #000
 	position: absolute
 .slick-next
@@ -154,7 +170,7 @@ header
 	left: 50px
 	z-index: 2
 .item
-	h2
+	h1
 		position: absolute
 		top: 40%
 		left: 0
@@ -186,13 +202,14 @@ header
 			li
 				padding: 0 30px
 				display: inline-block
-				border-right: 1px solid $main-color
+				border-right: 2px solid $main-color
 				&:last-child
 					border-right: none
 				a
 					padding: 10px 15px
 					color: #fff
 					text-decoration: none
+					text-transform: uppercase
 					transition: .3s
 					-webkit-transition: .3s
 					&:hover
@@ -213,9 +230,17 @@ header
 
 /* WRAP BLOCK */
 #article
-	padding: 200px
 	display: block
-	color: #000
+
+/* About us */
+.about-us
+	h2
+		margin: 0 0 25px 0
+		padding: 0
+		font-size: 36px
+
+/* End about us */
+
 /* END WRAP BLOCK */
 
 /* FOOTER */

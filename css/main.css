@@ -81,10 +81,8 @@ section {
   height: 100%;
   overflow: hidden;
   background: #fcfcfc url("../img/preloader.gif") no-repeat center center;
-  background-size: 15%; }
-
-@media (max-width: 1199px) {
   background-size: 20%; }
+
 /* END PRELOADER */
 /* MAIN BLOCK */
 /* Header top */
@@ -176,7 +174,8 @@ header {
   width: 100%;
   color: #000;
   background-color: #fff;
-  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
   height: 50px !important; }
 
 .header-bottom nav ul {
@@ -220,8 +219,27 @@ header {
   margin: 0 0 25px 0;
   padding: 0;
   font-size: 36px; }
-.about-us video {
-  width: 100%; }
+
+.video {
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  cursor: pointer; }
+
+.playpause {
+  margin: auto;
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background-image: url(http://png-4.findicons.com/files/icons/2315/default_icon/256/media_play_pause_resume.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer; }
 
 /* End about us */
 /* END WRAP BLOCK */
@@ -233,5 +251,3 @@ footer {
   padding: 15px; }
 
 /* END FOOTER */
-
-/*# sourceMappingURL=main.css.map */

@@ -5,18 +5,17 @@ $(document).ready(function() {
 		setTimeout(function(){
 			$('#preloader').fadeOut('slow', function () {
 			});
-		},10000);
+		},1000);
 	});
 
-	// var prel = "#preloader";
-	// if (prel = true) 
-	// {
-	// 	$('html, body').css("overflow", "hidden");	
-	// } else
-	// {
-	// 	$('html, body').css("overflow", "hidden");
-	// }
-
+/*	if($("#preloader").css("display") == "block")
+	{
+		$('html, body').css("overflow", "hidden");
+	} else
+	{
+		$('html, body').css("overflow", "visible");
+	}
+*/
 	// Header phone slider
 	(function phs() {
 		var op = $('#phone_slider > div.v');
@@ -39,7 +38,12 @@ $(document).ready(function() {
 		autoplaySpeed: 1800,
 		speed: 1200,
 		fade: true,
-		cssEase: 'linear'
+		cssEase: 'linear',
+		arrows: true,
+		dots: true
 	});
+
+	// About us video
+
 
 });

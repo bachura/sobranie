@@ -24,7 +24,7 @@ body
 	height: 100%
 	// overflow-x: hidden
 body
-	font-family: "Drugs", sans-serif
+	font-family: "OpenSans", sans-serif
 	font-weight: normal
 	font-size: 16px
 
@@ -37,40 +37,47 @@ li
 section
 	width: 100%
 	height: auto
-	padding: 60px 0
+	padding: 50px 0
 
-.line
-	position: relative
-	z-index: 1
-.line::before
-	content: ''
-	position: absolute
-	background-color: $main-color
-	bottom: 0
-	left: 1px
-	right: 0
-	height: 15px
-	z-index: -1
+h2
+	margin: 0
+	padding: 0
+	font-size: 36px
+	text-transform: uppercase
+	letter-spacing: 1px
+	.line
+		position: relative
+		z-index: 1
+		.bg
+			position: relative
+			z-index: -2
+		&:before
+			content: ''
+			position: absolute
+			bottom: 19px
+			right: 0
+			height: 10px
+			z-index: -1
+			background: -moz-linear-gradient(left, rgba(246,91,9,0) 0%, rgba(246,91,9,1) 35%, rgba(246,91,9,1) 70%, rgba(246,91,9,0) 100%)
+			background: -webkit-linear-gradient(left, rgba(246,91,9,0) 0%,rgba(246,91,9,1) 35%,rgba(246,91,9,1) 70%,rgba(246,91,9,0) 100%)
+			background: linear-gradient(to right, rgba(246,91,9,0) 0%,rgba(246,91,9,1) 35%,rgba(246,91,9,1) 70%,rgba(246,91,9,0) 100%)
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f65b09', endColorstr='#00f65b09',GradientType=1 )
 
 .btn
 	background: transparent
-	color: #fff
+	color: #000
 	display: inline-block
-	vertical-align: middle
-	padding: 10px 25px
+	vertical-align: bottom
+	padding: 5px 25px
 	text-decoration: none !important
 	text-align: center
-	font-family: "Arimo", sans-serif
-	font-size: 21px
-	font-weight: 400
-	line-height: 15px
-	border-radius: 600px
-	border: 3px solid #a0ca77
-	transition: .3s
-	-webkit-transition: .3s
-.btn
+	font-size: 16px
+	border-radius: 0
+	border: 1px solid $main-color
+	transition: .4s
+	-webkit-transition: .4s
 	&:hover
-		background: #009524
+		background: $main-color
 		color: #fff
 /* 	END GENERAL STYLE */
 
@@ -202,6 +209,7 @@ header
 					color: #000
 					text-decoration: none
 					text-transform: uppercase
+					letter-spacing: 1px
 					transition: .3s
 					-webkit-transition: .3s
 					&:hover
@@ -228,8 +236,9 @@ header
 .about-us
 	h2
 		margin: 0 0 25px 0
-		padding: 0
-		font-size: 36px
+		.line:before
+			width: 75%
+			left: 30px
 
 .video
 	width: 100%
@@ -239,26 +248,91 @@ header
 
 .playpause
 	margin: auto
-	width: 30%
-	height: 30%
+	width: 25%
+	height: 25%
 	position: absolute
 	left: 0%
 	right: 0%
 	top: 0%
 	bottom: 0%
-	background-image: url(http://png-4.findicons.com/files/icons/2315/default_icon/256/media_play_pause_resume.png)
+	background-image: url("../img/media_play_pause_main_color.png")
 	background-repeat: no-repeat
 	background-size: contain
 	background-position: center
 	cursor: pointer
 /* End about us */
 
+/* Special wrap  */ 
+.special-wrap
+	box-shadow: 0 0 10px 4px rgba(0, 0, 0, .1)
+	h3
+		margin: 0
+		padding-top: 6px
+		font-size: 20px
+	form
+		text-align: right
+		input
+			margin-right: 10px
+			padding: 5px 10px
+			width: 25%
+			border: 1px solid #000
+			transition: .3s
+			-webkit-transition: .3s
+			&:focus
+				border: 1px solid $main-color
+/* End special wrap  */ 
+
+/* Reviews wrap */
+.reviews-wrap
+	text-align: center
+	h2
+		margin: 0 0 35px 0
+		.line:before
+			width: 54%
+			left: 75px
+	.reviews-item
+		position: relative
+		width: 20%
+		margin: 0 auto
+		video
+			height: 200px
+			width: 200px
+			border-radius: 600px
+			object-fit: cover
+		.playpause
+			left: 6%
+			bottom: 20%
+		h3
+			margin: 0
+			padding-top: 15px
+			font-size: 18px
+
+/* End reviews wrap */
+
+
 /* END WRAP BLOCK */
 
 /* FOOTER */
 footer
+	text-align: center
 	height: 50px
-	color: #fff
-	background-color: #000
-	padding: 15px
+	color: #000
+	background-color: #fff
+	box-shadow: 0 -8px 10px 0 rgba(0, 0, 0, .1)
+	img
+		width: 50%
+		height: auto
+	.footer-left
+		text-align: left
+		h4
+			line-height: 50px
+			margin: 0
+			font-size: 16px
+	.footer-center
+		line-height: 49px
+	.footer-right
+		text-align: right
+		p
+			margin: 0
+			line-height: 50px
 /* END FOOTER */

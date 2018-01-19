@@ -5,17 +5,15 @@ $(document).ready(function() {
 		setTimeout(function(){
 			$('#preloader').fadeOut('slow', function () {
 			});
+			$('html, body').css("overflow", "visible");
 		},1000);
 	});
 
-/*	if($("#preloader").css("display") == "block")
+	if($("#preloader").css("display") == "block")
 	{
 		$('html, body').css("overflow", "hidden");
-	} else
-	{
-		$('html, body').css("overflow", "visible");
-	}
-*/
+	};
+
 	// Header phone slider
 	(function phs() {
 		var op = $('#phone_slider > div.v');

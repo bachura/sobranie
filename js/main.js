@@ -53,4 +53,11 @@ $(document).ready(function() {
 		}
 	});
 
+	// Если включить видео, то которое играет сейчас должно приостановится
+	// if($(".video").get(0).play){
+	// 	$(this).siblings(".video").get(0).pause();
+	// };
+	
+
+
 });

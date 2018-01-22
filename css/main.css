@@ -108,23 +108,24 @@ header {
     display: inline-block;
     padding: 6px 4px; }
     .header-top-social a svg {
-      fill: #000;
+      fill: #f65b09;
       transition: 0.3s;
       -webkit-transition: 0.3s; }
       .header-top-social a svg:hover {
-        fill: #f65b09; }
+        fill: #000; }
 
 .logo-wrap {
   text-align: center;
-  line-height: 45px; }
+  line-height: 47px; }
   .logo-wrap img {
-    width: 50%; }
+    width: 55%; }
 
 /* End header top */
 /* Phone header */
 .phones {
   text-align: right;
   color: #000;
+  font-weight: 1000;
   line-height: 50px; }
   .phones > div {
     display: block; }
@@ -203,6 +204,33 @@ header {
         color: #f65b09;
         text-shadow: 0px 5px 8px #f65b09; }
 
+.header-bottom-second {
+  line-height: 50px;
+  width: 100%;
+  color: #000;
+  background-color: #fff;
+  -webkit-box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1); }
+  .header-bottom-second ul {
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    .header-bottom-second ul li {
+      padding: 0 30px;
+      display: inline-block; }
+      .header-bottom-second ul li a {
+        padding: 10px 15px;
+        font-size: 14px;
+        color: #000;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.3s;
+        -webkit-transition: 0.3s; }
+        .header-bottom-second ul li a:hover {
+          color: #f65b09;
+          text-shadow: 0px 5px 8px #f65b09; }
+
 /* End headre bottom */
 /* Setting sticky */
 .sticky {
@@ -238,10 +266,10 @@ header {
   width: 25%;
   height: 25%;
   position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   background-image: url("../img/media_play_pause_main_color.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -270,6 +298,40 @@ header {
         border: 1px solid #f65b09; }
 
 /* End special wrap  */
+/* Advantages wrap */
+.advantages-wrap {
+  text-align: center; }
+  .advantages-wrap h2 {
+    margin: 0 0 35px 0; }
+  .advantages-wrap-item {
+    text-align: left;
+    position: relative;
+    width: 25%;
+    max-height: 500px;
+    overflow: hidden;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.6s;
+    -webkit-transition: 0.6s; }
+    .advantages-wrap-item:hover {
+      text-decoration: none;
+      color: #000; }
+      .advantages-wrap-item:hover img {
+        transition: 0.6s;
+        -webkit-transition: 0.6s;
+        opacity: 0.5; }
+  .advantages-wrap-desc {
+    padding: 15px;
+    left: 0;
+    position: absolute;
+    bottom: 40px;
+    font-size: 14px; }
+    .advantages-wrap-desc h2 {
+      margin: 0;
+      padding-bottom: 15px;
+      font-size: 20px; }
+
+/* End Advantages wrap */
 /* Reviews wrap */
 .reviews-wrap {
   text-align: center; }
@@ -307,7 +369,7 @@ footer {
   -webkit-box-shadow: 0 -8px 10px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 -8px 10px 0 rgba(0, 0, 0, 0.1); }
   footer img {
-    width: 50%;
+    width: 55%;
     height: auto; }
   footer .footer-left {
     text-align: left; }

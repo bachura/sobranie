@@ -59,8 +59,7 @@ h2 {
       right: 0;
       height: 10px;
       z-index: -1;
-      background: -moz-linear-gradient(left, rgba(246, 91, 9, 0) 0%, #f65b09 35%, #f65b09 70%, rgba(246, 91, 9, 0) 100%);
-      background: -webkit-linear-gradient(left, rgba(246, 91, 9, 0) 0%, #f65b09 35%, #f65b09 70%, rgba(246, 91, 9, 0) 100%);
+      background: -webkit-gradient(linear, left top, right top, from(rgba(246, 91, 9, 0)), color-stop(35%, #f65b09), color-stop(70%, #f65b09), to(rgba(246, 91, 9, 0)));
       background: linear-gradient(to right, rgba(246, 91, 9, 0) 0%, #f65b09 35%, #f65b09 70%, rgba(246, 91, 9, 0) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f65b09', endColorstr='#00f65b09',GradientType=1 ); }
 
@@ -196,7 +195,8 @@ h2 {
   width: 100%;
   color: #000;
   background-color: #fff;
-  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
   height: 50px !important; }
 
 .header-bottom nav ul {
@@ -224,7 +224,8 @@ h2 {
   width: 100%;
   color: #000;
   background-color: #fff;
-  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1); }
+  -webkit-box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1); }
   .header-bottom-second ul {
     margin: 0;
     padding: 0;
@@ -268,6 +269,13 @@ h2 {
   .about-us h2 .line:before {
     width: 75%;
     left: 30px; }
+.about-us h3 {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 20px; }
+  .about-us h3 span {
+    font-weight: 800;
+    text-transform: uppercase; }
 
 .video {
   width: 100%;
@@ -293,7 +301,8 @@ h2 {
 /* End about us */
 /* Special wrap  */
 .special-wrap {
-  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1); }
+  -webkit-box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1); }
   .special-wrap h3 {
     margin: 0;
     padding-top: 6px;
@@ -361,7 +370,8 @@ h2 {
       height: 200px;
       width: 200px;
       border-radius: 600px;
-      object-fit: cover; }
+      -o-object-fit: cover;
+         object-fit: cover; }
     .reviews-wrap .reviews-item .playpause {
       left: 6%;
       bottom: 20%; }
@@ -378,7 +388,8 @@ footer {
   height: 50px;
   color: #000;
   background-color: #fff;
-  box-shadow: 0 -8px 10px 0 rgba(0, 0, 0, 0.1); }
+  -webkit-box-shadow: 0 -8px 10px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 -8px 10px 0 rgba(0, 0, 0, 0.1); }
   footer img {
     width: 55%;
     height: auto; }
@@ -404,10 +415,78 @@ footer {
 /* ========= END MAIN PAGE ========= */
 /* ========= CONTACTS PAGE ========= */
 .contacts-wrap {
-  text-align: center; }
-  .contacts-wrap-info img {
-    width: 20%; }
+  text-align: center;
+  width: 100%;
+  height: 70vh;
+  display: table; }
+  .contacts-wrap-info {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle; }
+    .contacts-wrap-info h2 {
+      margin-bottom: 30px;
+      font-size: 18px; }
+  .contacts-wrap .phone-contacts a {
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    font-weight: 800;
+    transition: 0.3s;
+    -webkit-transition: 0.3s; }
+    .contacts-wrap .phone-contacts a:hover {
+      color: #f65b09; }
+  .contacts-wrap .mail-contacts a {
+    margin-top: 15px;
+    text-decoration: underline;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+    -webkit-transition: 0.3s; }
+    .contacts-wrap .mail-contacts a:hover {
+      color: #f65b09; }
+  .contacts-wrap .social-contacts {
+    margin-top: 15px; }
+    .contacts-wrap .social-contacts svg {
+      fill: #f65b09;
+      transition: 0.3s;
+      -webkit-transition: 0.3s; }
+      .contacts-wrap .social-contacts svg:hover {
+        fill: #000; }
 
 /* ========= END CONTACTS PAGE ========= */
+/* ========= 404 PAGE ========= */
+.error-wrap {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  display: table; }
+  .error-wrap-info {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle; }
+    .error-wrap-info h1 {
+      margin: 0;
+      font-size: 200px; }
+    .error-wrap-info img {
+      margin: 20px 0;
+      width: 25%; }
+    .error-wrap-info a {
+      color: #000;
+      font-size: 18px;
+      text-decoration: none;
+      transition: 0.3s;
+      -webkit-transition: 0.3s; }
+      .error-wrap-info a:hover {
+        color: #f65b09; }
 
-/*# sourceMappingURL=main.css.map */
+/* ========= END 404 PAGE ========= */
+/* ========= PROJECT PAGE ========= */
+.our-project {
+  text-align: center; }
+  .our-project h2 {
+    margin: 0;
+    padding-bottom: 20px;
+    font-size: 24px; }
+
+/* ========= END PROJECT PAGE ========= */

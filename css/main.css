@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 	GENERAL STYLE */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -35,6 +36,10 @@ section {
   height: auto;
   padding: 50px 0; }
 
+.wrap {
+  min-height: 100%;
+  padding-bottom: 50px; }
+
 h2 {
   margin: 0;
   padding: 0;
@@ -54,7 +59,8 @@ h2 {
       right: 0;
       height: 10px;
       z-index: -1;
-      background: -webkit-gradient(linear, left top, right top, from(rgba(246, 91, 9, 0)), color-stop(35%, #f65b09), color-stop(70%, #f65b09), to(rgba(246, 91, 9, 0)));
+      background: -moz-linear-gradient(left, rgba(246, 91, 9, 0) 0%, #f65b09 35%, #f65b09 70%, rgba(246, 91, 9, 0) 100%);
+      background: -webkit-linear-gradient(left, rgba(246, 91, 9, 0) 0%, #f65b09 35%, #f65b09 70%, rgba(246, 91, 9, 0) 100%);
       background: linear-gradient(to right, rgba(246, 91, 9, 0) 0%, #f65b09 35%, #f65b09 70%, rgba(246, 91, 9, 0) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f65b09', endColorstr='#00f65b09',GradientType=1 ); }
 
@@ -89,9 +95,10 @@ h2 {
   background-size: 20%; }
 
 /* END PRELOADER */
+/* ========= MAIN PAGE ========= */
 /* MAIN BLOCK */
 /* Header top */
-header {
+.header-main {
   height: 50px;
   color: #000;
   background-color: #fff;
@@ -160,6 +167,15 @@ header {
   width: 100%;
   margin: 0 auto; }
 
+/* Кнопки для слайдера с градиентом и на всю высоту */
+/* .slick-next.slick-arrow
+ * height: 100% !important
+ * right: 0
+ * padding: 0 20px
+ * background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.19) 13%, rgba(255,255,255,0.38) 26%, rgba(255,255,255,0.92) 38%, rgba(255,255,255,0.98) 57%, rgba(255,255,255,0.99) 60%, rgba(255,255,255,1) 63%, rgba(255,255,255,1) 100%)
+ * background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(255,255,255,0.19) 13%,rgba(255,255,255,0.38) 26%,rgba(255,255,255,0.92) 38%,rgba(255,255,255,0.98) 57%,rgba(255,255,255,0.99) 60%,rgba(255,255,255,1) 63%,rgba(255,255,255,1) 100%)
+ * background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(255,255,255,0.19) 13%,rgba(255,255,255,0.38) 26%,rgba(255,255,255,0.92) 38%,rgba(255,255,255,0.98) 57%,rgba(255,255,255,0.99) 60%,rgba(255,255,255,1) 63%,rgba(255,255,255,1) 100%)
+ * filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ) */
 .item h1 {
   position: absolute;
   top: 40%;
@@ -180,8 +196,7 @@ header {
   width: 100%;
   color: #000;
   background-color: #fff;
-  -webkit-box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
   height: 50px !important; }
 
 .header-bottom nav ul {
@@ -209,8 +224,7 @@ header {
   width: 100%;
   color: #000;
   background-color: #fff;
-  -webkit-box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1); }
   .header-bottom-second ul {
     margin: 0;
     padding: 0;
@@ -279,8 +293,7 @@ header {
 /* End about us */
 /* Special wrap  */
 .special-wrap {
-  -webkit-box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1); }
   .special-wrap h3 {
     margin: 0;
     padding-top: 6px;
@@ -348,8 +361,7 @@ header {
       height: 200px;
       width: 200px;
       border-radius: 600px;
-      -o-object-fit: cover;
-         object-fit: cover; }
+      object-fit: cover; }
     .reviews-wrap .reviews-item .playpause {
       left: 6%;
       bottom: 20%; }
@@ -366,8 +378,7 @@ footer {
   height: 50px;
   color: #000;
   background-color: #fff;
-  -webkit-box-shadow: 0 -8px 10px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 -8px 10px 0 rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 -8px 10px 0 rgba(0, 0, 0, 0.1); }
   footer img {
     width: 55%;
     height: auto; }
@@ -385,4 +396,18 @@ footer {
       margin: 0;
       line-height: 50px; }
 
+.main-footer {
+  height: 50px;
+  margin-top: -50px; }
+
 /* END FOOTER */
+/* ========= END MAIN PAGE ========= */
+/* ========= CONTACTS PAGE ========= */
+.contacts-wrap {
+  text-align: center; }
+  .contacts-wrap-info img {
+    width: 20%; }
+
+/* ========= END CONTACTS PAGE ========= */
+
+/*# sourceMappingURL=main.css.map */

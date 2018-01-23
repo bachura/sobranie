@@ -42,8 +42,12 @@ $(document).ready(function() {
 	});
 
 	// About us video
-	$('.video').parent().click(function () {
-		if($(this).children(".video").get(0).paused){
+	$('.video').parent().click(function () 
+	{
+		pause($(this).children(".video").get(0));
+
+		if($(this).children(".video").get(0).paused)
+		{
 			$(this).children(".video").get(0).play();
 			$(this).children(".playpause").fadeOut();
 			// $(this).children(".video").css("border", "none")
@@ -53,11 +57,20 @@ $(document).ready(function() {
 		}
 	});
 
-	// Если включить видео, то которое играет сейчас должно приостановится
-	// if($(".video").get(0).play){
-	// 	$(this).siblings(".video").get(0).pause();
-	// };
-	
+	function pause (el)
+	{
+		var videos = $('.reviews-item').children(".video");
+		$('.reviews-item').children(".playpause").fadeIn();
+
+		videos.each(function()
+		{
+			if(el != this)
+			{
+				this.pause();
+			}
+		});
+	};
+
 
 
 });

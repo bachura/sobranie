@@ -50,7 +50,7 @@ $(document).ready(function() {
 		{
 			$(this).children(".video").get(0).play();
 			$(this).children(".playpause").fadeOut();
-			// $(this).children(".video").css("border", "none")
+			// $(this).children(".video").css("border", "none");
 		}else{
 			$(this).children(".video").get(0).pause();
 			$(this).children(".playpause").fadeIn();

@@ -28,3 +28,13 @@
   font-style: normal;
   font-weight: 100;
   src: url("../fonts/OpenSans-Italic/OpenSans-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Italic/OpenSans-Italic.ttf") format("truetype"); }
+@font-face {
+  font-family: "Hiragino-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Hiragino-Regular/HiraginoSans Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Hiragino-Regular/HiraginoSans Regular.woff") format("woff"), url("../fonts/Hiragino-Regular/HiraginoSans Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "Hiragino-Bold";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/Hiragino-Bold/HiraginoSans Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Hiragino-Bold/HiraginoSans Bold.woff") format("woff"), url("../fonts/Hiragino-Bold/HiraginoSans Bold.ttf") format("truetype"); }

@@ -24,7 +24,16 @@ $(document).ready(function() {
 			op.parent().children().first().addClass('v').fadeIn(300);
 		}
 		setTimeout(phs, 1600);
-	}());	
+	}());
+
+	// smooth scroll
+	var $page = $("html, body");
+	$('a[href*="#"]').click(function() {
+	    $page.animate({
+	        scrollTop: $($.attr(this, "href")).offset().top - 40
+	    }, 650);
+	    return false;
+	});
 
 	// Main carousel
 	$('.main-carousel').slick({

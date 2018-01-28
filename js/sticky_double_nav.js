@@ -1,5 +1,5 @@
 (function(){
-var a = document.querySelector('#aside'), b = null, P = 50;
+var a = document.querySelector('#aside'), b = null, P = 40;
 window.addEventListener('scroll', Ascroll, false);
 document.body.addEventListener('scroll', Ascroll, false);
 function Ascroll() {

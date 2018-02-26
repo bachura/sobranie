@@ -265,6 +265,7 @@ h2 {
 
 /* About us */
 .about-us h2 {
+  text-align: center;
   margin: 0 0 25px 0; }
   .about-us h2 .line:before {
     width: 75%;
@@ -282,6 +283,11 @@ h2 {
   .about-us video span {
     font-weight: 800;
     text-transform: uppercase; }
+.about-us .description {
+  text-align: justify;
+  text-indent: 25px; }
+.about-us-block {
+  margin-top: 40px; }
 
 .video {
   width: 100%;
